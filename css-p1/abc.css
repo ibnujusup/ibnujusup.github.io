@@ -8,6 +8,20 @@ a {
 	color: green;
 }
 
+.boy {
+	color: green;
+}
+
+
+.muslim {
+	color: green;
+}
+
+
+.boy.muslim {
+	color: white;
+}
+
 
 a#aiman {
 	color: blue;
