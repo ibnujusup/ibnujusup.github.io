@@ -12,12 +12,12 @@
 	#wrapper {
 	    width: 800px;
 	    height: auto;
-	    background: beige;
+	    background: white;
 	}
 
 
 	#header {
-	    width: 100%;
+	    width: 792px;
 	    height: 176px;
 	    background-color: #e6af0a;
 	    border: 4px solid #615a5a;
@@ -78,9 +78,14 @@
 
 	a:hover {  
 	    color: blue;
+	    text-decoration: underline;
 	}
 
 
+	div#center {
+	    width: 100%;
+	    position: relative;
+	}
 
 	#sidebar ul li {
 	    list-style: none;
@@ -108,25 +113,48 @@
 
 	div#content {
 	    display: inline-block;
-	    width: 43%;
+	    width: 66%;
 	    height: 304px;
 	    position: absolute;
 	    overflow: scroll;
 	    border: 5px solid black;
-	    margin: 7px 1px 7px 12px;
+	    margin: 7px 1px 7px 10px;
 	    background: white;
 	}
 
-	#boxes div {
+	#box1, #box2, #box3, #box4 {
 	    border: 5px solid green;
 	    width: 170px;
 	    height: 71px;
-	    border-radius: 2px 19px 2px 19px;
+	    /* border-radius: 2px 19px 2px 19px; */
 	    margin: 15px 7px 15px 10px;
 	    display: inline-block;
 	    /* vertical-align: middle; */
 	    background-color: blanchedalmond;
+	    position: relative;
 	}
+
+
+	#box1a, #box1b, #box2a, #box2b, #box3a, #box3b, #box4a, #box4b {
+	    background: #F44336;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 13px;
+	    position: absolute;
+	}
+
+
+	#box1a, #box2a, #box3a, #box4a {
+	    top: -15px;
+	    right: -12px;
+	}
+
+
+	#box1b, #box2b, #box3b, #box4b {
+	    top: 57px;
+	    right: 157px;
+	}
+
 
 
 	div#footer {
@@ -136,9 +164,14 @@
 	    text-align: center;
 	    font-size: 22px;
 	    font-family: serif;
-	    colo
+	 
 	}
+
+
 	</style>
+
+
+
 </head>
 
 
@@ -161,20 +194,15 @@
 
 
 
-
-		<div id="sidebar">
-			
+	<div id="center">
+		<div id="sidebar">	
 			<ul>
 				<li><h3><a href="#siapa"> SIAPA </a></h3></li>
 				<li><h3><a href="#servis"> SERVIS </a></h3></li>
 				<li><h3><a href="#syarikat"> SYARIKAT </a></h3></li>
 				<li><h3><a href="#kejayaan"> KEJAYAAN </a></h3></li>
-
 			</ul>
-
-		</div>
-
-		<div id="content">
+		</div><div id="content">
 			
 			<a id="siapa"> <h2>SIAPA SAYA</h2></a>
 				<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -195,15 +223,30 @@
 				<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 		</div>
-
+	</div>
 		
+
+
 	<div id="boxes">
-		<div></div>	
-		<div></div>	
-		<div></div>	
-		<div></div>	
+		<div id="box1">
+			<div id="box1a"></div>
+			<div id="box1b"></div>
+		</div>
+		<div id="box2">
+			<div id="box2a"></div>
+			<div id="box2b"></div>
+		</div>
+		<div id="box3">
+			<div id="box3a"></div>
+			<div id="box3b"></div>
+		</div>
+		<div id="box4">
+			<div id="box4a"></div>
+			<div id="box4b"></div>
+		</div>
 	</div>
 	
+
 	<div id="footer">
 				<h5> Website Encik Deen <br> <a href="mailto:email@gmail.com? subject=Encik Deen">KLIK DISINI</a> untuk email saya :-) </h5>
 				
