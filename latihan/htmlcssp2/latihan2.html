@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 22 September 2016</title>
+	<style type="text/css">
+
+
+	* {
+		margin: 0;
+	}	
+
+	/* TUJUAN LETAK MARGIN 0 NI SEBAB BY DEFAULT, SETIAP WEBSITE ADE MARGIN DIE SENDIRI, SO, KITE "NORMALIZE" KAN DIE, DENGAN LETAK MARGIN SEBAGAI 0, JADI UNTUK SETIAP MARGIN LAIN, KITE BOLEH PILIH SENDIRI
+
+	*  ini maksudnye, merujuk pada semue bende dalam kod tu, yang hidup atau mati (ayat encik dudy ) */
+
+	div#header {
+		background: red;
+	}
+
+
+	div#left {
+		background: pink;
+	}
+
+
+	div#right {
+		background: #195a54;
+	}
+
+	.item {
+		display: inline-block;
+		width: 25%;
+		border: 1px black solid;
+		background: orange;
+		text-align: center;
+		box-sizing: border-box;  /* TUJUAN PILIH BORDER-BOX IALAH UNTUK  */
+		padding: 8px;
+		margin: 40px 0;
+
+
+		
+	}
+
+	div#container div {
+		float: left;
+		/* float rigth die, swab position / column  */
+	}
+
+	
+	div#container div#footer {
+		float: none;
+	}
+
+	/* TUJUAN LETAK FLOAT NONE, IALAH UNTUK ELAKKAN (DALAM KES INI, KITE NAK BACKGROUND YELLOW ADE) TERUS ADE  DAN TERUS ELKAKAN PROPERTY FLOAT DARI FLAOT LAIN ADE JUGAK*/
+	
+
+	div#container {
+		width: 100%;
+		background: pink;
+	
+
+	}
+
+	/* TUJUAN div#container  TAMBAH LAGI div , maksudnye parent die adalah div#container  , , so, kite nak semua div lain dalam div#container ade ciri yang same, so letak la div#container div */
+
+</style>
+</head>
+<body>
+
+
+<div id="container">
+	<div id="header"  class="item" style="">item</div>
+	<div id="left" class="item" style="">item</div>
+	<div id="right" class="item" style="">item</div>
+	<div id="footer" class="item" style="">item</div>
+     
+</div>
+
+</body>
+</html>
