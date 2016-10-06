@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class Exercise 3</title>
+
+    <style type="text/css">
+		
+	* {
+        margin: 0;  /*   ubah dari 0 kepada 0;    */
+        padding: 0;   /*    tambah padding:0;    */
+    }
+	
+	
+    div#container {
+        width: 900px;  /*setkan width gune unit px*/
+                       /*    PADAM height: auto;    */ 
+        background: white;
+        margin: 0 auto;  /*set ini biar die center kiri dan kanan untuk semue element dalam container */
+    }
+
+	div#one {
+        width: 100%;
+        height: 181px;
+        border: 3px solid black;
+        margin-top: 10px;
+        background: #8b8bb9;
+        box-sizing: border-box;
+        vertical-align: middle;
+    }   
+
+	div#logo {
+        display: inline-block;
+        margin: 35px 27px 35px 27px;    /* TUKAR KE NILAI INI 35px 27px 35px 27px;   */
+        vertical-align: middle;
+        width: 44%;    /* TAMBAH NILAI INI */
+        text-align: center;   /* TAMBAH NILAI INI */
+    }
+
+	
+	img {
+        width: 120px;
+        display: inline-block;
+        border-radius: 120px;
+    }
+
+   .item {
+             /* margin: 0;  NI BUANG SEBAB KITE DA SPECIFY DI BODY MARGIN 0   SO TAK PERLU ULANG LAGI*/ 
+        background: #4040da;
+        height: 46px;
+        width: 15%;
+           /* INI margin: 67px;   BUANG  , TAK PERLU SETTING  */
+        text-align: center;
+        border: 3px solid black;
+        padding: 7px;
+        box-sizing: border-box;
+        font-family: cursive;
+        display: inline-block;
+    }
+
+
+	div#two {
+        width: 100%;   /*tukar 100% sebab div#two ini wrapper bagi div#sidebar dan div#content, jadi harus 100%, supaya width die same dengan div#container */
+        display: inline-block;
+    }
+
+	
+	div#sidebar {
+        background: #6a6aec;
+        width: 30%;   /*tukar ke 30% sebab size sidebar sikit je */
+        height: 323px;
+        border: 3px solid black;
+        box-sizing: border-box;
+                    /* margin-left: 11%;   PADAM */
+                    /* margin-top: 5%; PADAM */
+                    /* padding: 15px; PADAM */
+        vertical-align: top;
+        text-align: center;
+        margin-top: 5px;   /* tambah info ini */
+        margin-right: 2px;   /* tambah info ini */
+        margin-left: 0px;
+        display: inline block;  /*tukar inline block */
+    }
+
+
+    #sidebar ul {        /* TUKAR DARI ul, menu, dir  KEPADA  #sidebar ul  */         
+        display: inline-block; 
+        margin-top: 36px;
+        /* list-style-type: disc;   PADAM ATTRIBUTE INI */
+        /* -webkit-margin-before: -3em; PADAM ATTRIBUTE INI  */
+        /* -webkit-margin-after: 7em; PADAM ATTRIBUTE INI  */
+        /* -webkit-margin-start: -116px; PADAM ATTRIBUTE INI  */
+        /* -webkit-margin-end: 0px; PADAM ATTRIBUTE INI  */
+        /* -webkit-padding-start: 54px; PADAM ATTRIBUTE INI  */
+        /* margin-left: -47px; PADAM ATTRIBUTE INI  */
+        /* margin-right: 54px; PADAM ATTRIBUTE INI  */
+        /* text-align: center; PADAM ATTRIBUTE INI  */
+    }
+
+    
+    li {
+        list-style: none;
+        width: 154px;    /* tambah info ini */
+        height: 58px;    /* tambah info ini */
+        text-align: center;    /* tambah info ini */
+        font-size: 1.1em;    /* tambah info ini */
+        background: white;    /* tambah info ini */
+        border: 2px solid black;    /* tambah info ini */
+        margin-right: 0px;    /* tambah info ini */
+    }
+
+
+    h3 {
+                /* PADAM   background: #14c7c7;  */
+                /* PADAM  margin: 38px;   */
+                /* PADAM  padding: 10px 5px;   */
+                /* PADAM  margin-left: auto;   */
+                /* PADAM padding-left: 82px;   */
+                /* PADAM   padding-right: 50px;  */
+        padding: 18px;    /* tambah info ini */    
+    }
+
+
+
+    #sidebar ul li h3 a {     /* TAMBAH INFO INI */
+        text-decoration: none;
+    }
+
+
+   div#content {
+    display: inline-block;
+    width: 69.5%;    /*tukar nilai ini, supaya width die tepat */  
+    height: 323px;   /*tukar nilai ini, supaya height die same dengan heigth sidebar */ 
+    
+        /* padding-left: 712px;   PADAM */
+        /* position: relative;   PADAM  */
+        /* top: -417px;    PADAM  */
+        /* left: -138px;  PADAM   */
+        /* right: 191px;  PADAM   */  
+    background: #6aaf89;
+        /* margin-left: 164%;  PADAM */
+    margin-top: 5px;    /*TUKAR ke 5px , bukan % , sebab nak sama dengan sidebar punye margin top */
+         /* margin-bottom: 5%; PADAM */
+    box-sizing: border-box;
+    border: 3px solid black;
+    overflow: scroll;
+    padding: 16px;      /*tukar ke nilai ini */
+    }
+
+
+
+	div#three {
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+    vertical-align: middle;
+    }
+
+
+
+    div#threea,  div#threeb,  div#threec,  div#threed {
+        border: 3px solid black;
+        width: 150px;
+        height: 50px;
+        box-sizing: border-box;
+        background: #8fcdf1;
+        display: inline-block;
+        margin: 30px 25px 25px 30px;
+        position: relative;
+    }
+
+	div#threea1 {
+    top: -14px;
+    right: -14px;
+    background: blue;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+
+	div#threea2 {
+    top: 36px;
+    left: -14px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background: blue;
+}
+
+
+
+
+	div#threeb1 {
+    top: -14px;
+    right: -14px;
+    width: 30px;
+    height: 30px;
+    background: blue;
+    border-radius: 20px;
+    position: absolute;
+}
+
+	div#threeb2 {
+    top: 36px;
+    left: -14px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 20px;
+    background: blue;
+}
+
+
+
+
+	div#threec1 {
+    top: -14px;
+    right: -14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: blue;
+    position: absolute;
+}
+
+	div#threec2 {
+    top: 36px;
+    left: -14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: blue;
+    position: absolute;
+}
+
+
+
+	div#threed1 {
+    top: -14px;
+    right: -14px;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    position: absolute;
+    background: blue;
+}
+
+	div#threed2 {
+    top: 36px;
+    left: -14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: blue;
+    position: absolute;
+}
+
+div#four {
+    width: 100%;
+    height: 100px;
+    border: 3px solid;
+    background: #e7e7ec;
+    /*margin: 25px 110px; */
+    /*padding: 20px; */
+    text-align: center;
+    font-size: medium;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+
+
+	</style>
+
+    <!--  CSS SAMPAI SINI SAHAJA   , BAWAH INI HTML -->
+
+</head>
+<body>
+
+	<div id="container">
+		<div id="one">
+			<div id="logo">
+				<img src="https://github.com/Lutfie56/Lutfie56.github.io/blob/master/abc/blue%20tulips.JPG?raw=true">
+			</div>
+			
+			<div id="onea" class="item">LOCATION</div>
+			<div id="oneb" class="item">INFORMATION</div>    <!--   TUKAR <div id=" oneb"  kepada  <div id="oneb"    -->
+			<div id="onec" class="item">CONTACT</div>
+		
+		</div>
+		<div id="two">
+
+			<div id="sidebar">
+			<ul>
+				<li>
+					<h3>
+					<a href="rooms">Rooms</a>
+					</h3>
+				</li>
+				<li>
+					<h3>
+					<a href="rates">Rates</a>
+					</h3>	
+				</li>
+				<li>
+					<h3>
+					<a href="services">Services</a>	
+					</h3>
+				</li>
+				<li>
+					<h3>
+					<a href="booking">Booking</a>	
+					</h3>
+				</li>
+				
+			</ul>
+            </div>  <!--  TAMBAH  </div>  UNTUK MENUTUP <div id="sidebar" class="item2">  ini -->
+
+			<div id="content"><h1>Description</h1>
+				<p>With great pleasure we wish to announce the launching of Hotel at...address.
+The Hotel provides a range of room services to meet the discerning needs of budget travellers who requires good clean rooms with the basic amenities for a pleasant stay. We believe that the services provided will cater to the needs of some of your guests and students. Frequently there will be special occasions where the family members of students wish to be present to celebrate the joyous occasion such as new intake registration as well as convocation. Then there will also be personal private occasions that have itsâ€™ own merits of memories. The availability of a budget hotel will enable those who are in need of low priced rooms to travel and get a comfortable stay.
+We are also in the midst of building new hotels to cater for those who seek better facilities as well as increase the number of budget rooms. When the whole range of room services is completed, you can be rest assured that a wider segment of visitors will be catered for.  We are also in the midst of building new hotels to cater for those who seek better facilities as well as increase the number of budget rooms. When the whole range of room services is completed, you can be rest assured that a wider segment of visitors will be catered for. We are also in the midst of building new hotels to cater for those who seek better facilities as well as increase the number of budget rooms. When the whole range of room services is completed, you can be rest assured that a wider segment of visitors will be catered for
+</p>
+			</div>
+				
+	   </div>			
+
+		
+		<div id="three">
+			<div id="threea" class="item3">
+				<div id="threea1"></div>
+				<div id="threea2"></div>
+			</div>
+				
+			<div id="threeb" class="item3">
+				<div id="threeb1"></div>
+				<div id="threeb2"></div>
+
+			</div>
+				
+			<div id="threec" class="item3">
+				<div id="threec1"></div>
+				<div id="threec2"></div>
+			</div>
+				
+			<div id="threed" class="item3">
+				<div id="threed1"></div>
+				<div id="threed2"></div>
+			</div>
+				
+		
+		</div>
+
+
+		<div id="four">conclusion</div>
+	
+
+	
+</div>
+	
+</body>   <!--   UBAH DARI <</body>  kepada </body>    -->
+</html>
+
+
