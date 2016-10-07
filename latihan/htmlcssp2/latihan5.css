@@ -140,6 +140,10 @@
 	}
 
 
+	#content h2, p {
+		font-family: 'Chewy', cursive;
+	}
+
 	h2 {
 		text-align: center; 
 	}
