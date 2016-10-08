@@ -323,6 +323,11 @@
 		background: #d2d9dd;
 	}
 
+
+	#audio {
+		visibility: hidden;
+	}
+
 	div#footer {
 	    border: 0px solid transparent;
 	    color: yellow;
