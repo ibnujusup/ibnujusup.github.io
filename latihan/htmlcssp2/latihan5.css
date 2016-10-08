@@ -5,6 +5,11 @@
 	}
 
 
+	#body {
+		background-color: black;
+	}
+
+	
 	#wrapper {
 	    width: 800px;
 	    background: black;
@@ -47,7 +52,6 @@
 	    text-shadow: 2px 1px 4px black;
 	}
 
-	
 
 	a {
 	    text-decoration: none;
@@ -103,7 +107,6 @@
 	}
 
 
-
 	#sidebar ul li {
 	    list-style: none;
 	    border: 2px solid black;
@@ -111,16 +114,12 @@
 	    padding: 16px;
 	    border-radius: 17px;
 	    font-weight: bold;
-	    /*background: whitesmoke;*/
 	    width: 94px;
 	    margin-left: 13px;
 	    margin-bottom: 6px;
-
-
 	    background: #FF8008; /* fallback for old browsers */
 	    background: -webkit-linear-gradient(to left, #FF8008 , #FFC837); /* Chrome 10-25, Safari 5.1-6 */
-	    background: linear-gradient(to left, #FF8008 , #FFC837); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	            
+	    background: linear-gradient(to left, #FF8008 , #FFC837); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
 	}
 
 
@@ -143,6 +142,7 @@
 	#content h2, p {
 		font-family: 'Chewy', cursive;
 	}
+
 
 	h2 {
 		text-align: center; 
@@ -188,10 +188,8 @@
 	}
 
 
-
 	div#table {
 	    width: 100%;
-	    /* display: inline-block; */
 	    background: white;
 	    box-sizing: border-box;
 	    position: relative;
@@ -203,6 +201,7 @@
 		height: 10px;
 		background-color: white;
 	}
+
 
 	#line2 {
 		width: 100%;
@@ -231,10 +230,12 @@
 	    margin-top: -44px;
 	}
 
+
 	div#form1 {
 	    margin-left: 16px;
 	    margin-right: 13px;
 	}
+
 
 	div#form1, #form2 {
 	    background: white;
@@ -263,7 +264,6 @@
 	}
 
 
-
 	span.nombor {
 	    border: 1px solid blue;
 	    border-radius: 15px 15px 15px 0px;
@@ -276,22 +276,30 @@
 	    display: inline-block;
 	    margin-right: 4px;
 	    line-height: 30px;
-	    text-shadow: 0 1px 0;
+	    text-shadow: 2px 0px 1px black;
 	}
 
+
 	input[type="text"] {
-	    width: 100%;
+	    width: 377px;
 	    height: 28px;
 	    margin-bottom: 2.4px;
 	}
 
 
+	textarea {
+		width: 377px;
+		max-width: 377px;
+		height: 29px;
+		max-height: 150px;
+	}
+
 
 	input[type="radio"] {
-	    /* text-align: center; */
 	    margin-left: 28px;
 	    margin-right: 25px;
 	}
+
 
 	input[type="submit"] {
 	    width: 100%;
@@ -308,11 +316,13 @@
 		background: #109177;
 	}
 
+
 	input[type="checkbox"] {
 	    margin-left: 21px;
-	    /* text-align: center; */
 	    margin-right: 21px;
+
 	}
+
 
 	select {
 		width: 100%;
@@ -325,10 +335,13 @@
 
 
 	#audio {
-		visibility: hidden;
+	    visibility: hidden;
+	    background: white;
+	    text-align: center;
 	}
 
-	div#footer {
+
+	#footer {
 	    border: 0px solid transparent;
 	    color: yellow;
 	    padding: 12px;
@@ -343,6 +356,7 @@
 	    background-color:#282828;
 	    background-size:16px 16px;
 	}
+
 
 	#footer a {
 		color: yellow;
