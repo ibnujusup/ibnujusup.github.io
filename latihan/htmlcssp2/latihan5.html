@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,7 @@
 	<link rel="icon" 
 	      type="image/png" 
 	      href="https://ibnujusup.github.io/latihan/htmlcssp2/fav.ico">
-	<link rel="stylesheet" type="text/css" href="latihan5.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
 	
 </head>
@@ -101,14 +102,16 @@
 		<form>
 			<fieldset>
 				<legend> <span class="nombor"> 1 </span> MAKLUMAT PERIBADI</legend>
-
-					NAMA PENUH: <input type="text" name="nama" placeholder="Nama Penuh Anda">
+					<label for="nama"> NAMA PENUH: </label>
+					<input type="text" id="nama" placeholder="Nama Penuh Anda">
 					<br>
 					<br>
-					UMUR: <input type="text" name="umur" placeholder="Umur Anda">
+					<label for="umur"> UMUR ANDA: </label>
+					<input type="text" id="umur" placeholder="Umur Anda">
 					<br>
 					<br>
-					ALAMAT ANDA: <textarea type="text" name="alamat" placeholder="Jangan Lupa Isi Alamat Anda :-)"></textarea>
+					<label for="alamat"> ALAMAT ANDA: </label>
+					<textarea id="alamat" placeholder="Jangan Lupa Isi Alamat Anda :-)"></textarea>
 					<br>
 					<br>
 					<br>
@@ -119,11 +122,15 @@
 
    
 	<div id="form2">
+	<form>
 		<fieldset>
 			<legend> <span class="nombor"> 2 </span> MAKANAN KESUKAAN ANDA ?</legend>
-			<input type="radio" name="suka" value="mcd"> McD
-			<input type="radio" name="suka" value="phd"> Pizza
-			<input type="radio" name="suka" value="kfc"> KFC
+			<label for="mcd"> McD </label>
+			<input type="radio" name="makanan" id="mcd" value="mcd" checked="checked">
+			<label for="phd"> PhD </label>
+			<input type="radio" name="makanan" id="phd" value="phd">
+			<label for="kfc"> KFC </label>
+			<input type="radio" name="makanan" id="kfc" value="kfc">
 		</fieldset>
 		<br>
 	    <br>
@@ -131,7 +138,7 @@
 			<legend> <span class="nombor"> 3 </span>TEAM BOLA SEPAK ANDA ?</legend>
 			<select name="bola">
 				<option value="asroma"> AS ROMA</option>
-				<option value="barca"> BARCELONA</option>
+				<option value="barca" selected> BARCELONA</option>
 				<option value="celtic"> CELTIC</option>
 				<option value="porto"> FC PORTO </option>
 				<option value="basel"> FC BASEL</option>
@@ -147,9 +154,10 @@
 		</fieldset>
 		<br>
 		<input type="submit" value="HANTAR">
+	</form>
 	</div>
   </div>
-
+  
   	<div id="audio">
   		<audio controls autoplay>
   			<source src="https://ibnujusup.github.io/latihan/htmlcssp2/air.mp3" type="audio/mp3">
