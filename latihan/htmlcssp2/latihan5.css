@@ -216,7 +216,7 @@
 		font-size: 1.0em;
 		font-weight: bold;
 		color: blue;
-		font-weight: 4px;
+		 
 	}
 
 	
@@ -279,12 +279,20 @@
 	    text-shadow: 2px 0px 1px black;
 	}
 
+	label {
+		cursor: pointer;
+	}
 
 	input[type="text"] {
 	    width: 377px;
 	    height: 28px;
 	    margin-bottom: 2.4px;
 	}
+
+	input[type="text"]:focus {
+		background: yellow;
+	}
+
 
 
 	textarea {
@@ -295,10 +303,16 @@
 	}
 
 
-	input[type="radio"] {
-	    margin-left: 28px;
-	    margin-right: 25px;
+	textarea:focus {
+		background: yellow;
 	}
+
+	input[type="radio"] {
+    margin-left: 36px;
+    margin-right: 38px;
+    }
+
+
 
 
 	input[type="submit"] {
@@ -310,6 +324,7 @@
 	    font-size: 0.9em;
 	    font-weight: bold;
 	}
+
 
 
 	input[type="submit"]:hover {
@@ -329,9 +344,7 @@
 	}
 
 
-	input[type="text"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus, {
-		background: #d2d9dd;
-	}
+	
 
 
 	#audio {
