@@ -1,0 +1,593 @@
+
+* {   
+	margin:0;
+	padding:0;
+	border:0;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	
+}
+
+
+body {
+	background: #e9e9e9;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	background: white;
+    margin-top: 48px;
+}
+
+
+/** Start Of Header **/
+#header {
+	width: 100%;
+	padding: 18px;
+}
+
+
+.logo {
+    display: inline-block;
+    width: 50%;
+}
+
+
+.logo img {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    animation: quran 4s linear 1s 4 reverse;
+}
+
+
+@keyframes quran {
+    0% {left: 0px; top: 0px;}
+    25% {left:100px; top:0px;}
+    50% {left:200px; top:0px;}
+    75% {left: 300px; top:0px;}
+    100% {left: 0px; top:0px;}
+}
+
+
+.combine {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.combine h4 {
+    color: blue;
+}
+
+
+.combine p {
+    color: #888;
+}
+
+
+.menu {
+    display: inline-block;
+    text-align: right;
+    width: 49%;
+    vertical-align: middle;
+}
+
+
+.socialicons {
+    display: inline-block;
+}
+
+
+.socialicons img{
+    width: 36px;
+    height: 36px;
+    margin: 10px;
+}
+
+
+.socialicons img:hover {
+    animation: iconatas 0.5s ease 0s 1 reverse;
+    cursor: pointer;
+}
+
+
+@keyframes iconatas {
+    from {transform: rotateX(-90deg)}
+    to {transform: rotateX(0deg)}
+}
+
+
+.socialicons ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+.contact {
+    margin-right: 5px;
+}
+
+
+.contact ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+.contact ul li a {
+    text-decoration: none;
+}
+
+
+.contact ul li img {
+    margin-bottom: -7px;
+}
+
+
+
+/** Start Of Sidebar **/
+#sidebar {
+    display: inline-block;
+    padding: 24px;
+    width: 28%;
+    height: 321px;
+    margin-top: 90px;
+    vertical-align: top;
+}
+
+
+#sidebar ul li {
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 16px;
+    list-style: none;
+    box-shadow: 2px 2px black;
+    font-size: 16px;
+
+}
+
+
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: purple;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+
+
+#sidebar ul li:hover {
+    transform: scale(1.1, 1.1);
+    background: #2196f3;
+}
+
+
+
+
+#sidebar ul li a {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/** Start Of Content **/
+#content {
+    display: inline-block;
+    width: 71%;
+    padding: 30px;
+    margin-left: -13px;
+    position: relative;
+    height: 500px;
+    overflow: auto;
+    text-align: justify;
+    border: 10px solid #fff;
+    box-shadow: inset 0 0 50px #000, inset 0 0 50px #000, inset 0 0 50px #000;
+}
+
+#content h4 {
+	text-align: center;
+	text-decoration: none;
+}
+
+#content ul {
+    list-style-position: inside;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/** Start Of Column **/
+#column {
+    column-count: 3;
+    border: 3px dotted blue;
+    padding: 20px;
+    margin: 24px;
+    position: relative;
+    margin-top: 110px;
+    padding-left: 12px;
+    column-width: 223px;
+    column-fill: auto;
+    text-align: center;
+    margin-bottom: 99px;
+    background: #eae2e2;
+}
+
+#column img {
+    position: absolute;
+    top: -80px;
+    left: 334px;
+}
+
+
+blockquote {
+    border-left: 3px solid #ccc;
+    font-size: 19px;
+}
+
+
+.smallitalic {
+    font-style: italic;
+    font-size: 12px;
+}
+
+
+.biru {
+    color: blue;
+}
+
+
+/** Start Of Efek Hebat **/
+#efekhebat {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+
+#efekhebat h1 {
+    color: blue;
+    font-size: 21px;
+    position: absolute;
+    top: -60px;
+    right: 290px;
+}
+
+
+#efekhebat ul {
+    list-style: none;
+    perspective: 500px;
+}
+
+
+#efekhebat ul li {
+    display: inline-block;
+    perspective: 500px;
+    transition-property: perspective;
+    transition-duration: 0.5s;
+    transform-style: preserve-3d;
+}
+
+
+#efekhebat ul li:hover {
+    perspective: 5000px;
+}
+
+
+#efekhebat ul li img {
+    width: 303px;
+    height: 409px;
+    border: 10px solid #fcfafa;
+    transform: rotateY(10deg);
+    -moz-box-shadow: 0 3px 10px #888;
+    box-shadow: 0 3px 10px #888;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+
+#efekhebat ul li img:hover {
+    transform: rotateY(0deg);
+}
+
+
+.efekini {
+    border: 10px solid #fcfafa;
+    padding: 20px;
+    width: 245px;
+    height: 122px;
+    background-color: #deddcd;
+    margin: -106px 0 -0px 69px;
+    position: absolute;
+    box-shadow: 0 20px 40px #888;
+    transform: translateZ(30px) rotateY(30deg);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    text-align: center;     
+}
+
+
+.efekini h4 {
+    color: blue;
+}
+
+
+.efekini a {
+    text-decoration: none;
+    border: 2px solid black;
+    background: yellow;
+    color: black;
+    border-radius: 5px;
+}
+
+
+.efekini a:hover {
+    background: orange;
+}
+
+
+#efekhebat ul li:hover .efekini { 
+    transform: rotateY(0deg);
+    box-shadow:0 5px 10px #888; 
+    margin:-145px 0 0 30px; 
+    }
+
+
+
+/** Start Of Boxes **/
+#boxes {
+    margin-top: 144px;
+    padding:24px;
+}
+
+
+.box1 img, .box2 img, .box3 img, .box4 img {
+     width: 176px;
+    height: 185px;
+}
+
+
+.box1, .box2, .box3, .box4 {
+    width: 23.9%;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 29px 29px 29px 29px;
+    padding: 15px;
+    margin: 3px;
+    box-shadow: 4px 2px black;
+}
+
+
+.box1:hover {
+    animation: box1 6s linear 0s 2 reverse;
+}
+
+
+@keyframes box1 {
+    0% {background: white;}
+    25% {background: yellow;}
+    50% {background: blue;}
+    75% {background: red;}
+    100% {background: black;}
+}
+
+
+.box2:hover {
+    animation: box2 6s linear 0s 2 alternate
+}
+
+
+@keyframes box2 {
+    0% {transform: scale(1.1, 1.1);}
+    25% {transform: scale(1.2, 1.2);}
+    50% {transform: scale(1.3, 1.3);}
+    100% {transform: scale(1.4, 1.4);}
+}
+
+
+.box3card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 2.0s linear;
+}
+
+
+.box3:hover .box3card {
+    transform: rotateY(360deg);
+}
+
+
+.box4 {
+    cursor: pointer;
+    transition-property: border-radius, background-color;
+    height: 222px;
+    vertical-align: top;
+    transition: 3s linear;
+}
+
+
+.box4:hover { 
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+
+.box4 h4 {
+    text-align: center;
+    font-size: 21px;
+    color: blue;
+}
+
+
+/** Start Of Memo **/
+#memo {
+    padding: 21px;
+    position: relative;
+    width: 100%;
+    height: 274px;
+    margin-top: 49px;
+}
+
+
+.memo1, .memo2, .memo3, .memo4, .memo5, .memo6 {
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+        background-color:#282828;
+        background-size:16px 16px;
+    border-radius: 28px 28px 28px 28px;
+    border: 8px solid white;
+    width: 23.9%;
+    display: inline-block;
+    
+    padding: 24px;
+    margin-left: -86px;
+    height: 232px;
+}
+
+
+.memo1:hover, .memo2:hover, .memo3:hover, .memo4:hover, .memo5:hover, .memo6:hover {
+    z-index: 7;
+}
+
+
+#memo h1 {
+    color: blue;
+    font-size: 21px;
+    position: absolute;
+    top: -23px;
+    right: 373px;
+}
+
+
+.memo1 {
+    margin-left: 2px;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    z-index: 1;
+}
+
+
+.memo2 {
+    margin-left: 2px;
+    position: absolute;
+    top: 21px;
+    left: 161px;
+    z-index: 2;
+}
+
+
+.memo3 {
+    margin-left: 2px;
+    position: absolute;
+    top: 21px;
+    left: 295px;
+    z-index: 3;
+}
+
+
+.memo4 {
+    margin-left: 2px;
+    position: absolute;
+    top: 21px;
+    left: 429px;
+    z-index: 4;
+}
+
+
+.memo5 {
+    margin-left: 2px;
+    position: absolute;
+    top: 21px;
+    left: 563px;
+    z-index: 5;
+}
+
+
+.memo6 {
+    margin-left: 2px;
+    position: absolute;
+    top: 21px;
+    right: 27px;
+    z-index: 6;
+}
+
+
+.kuning {
+    color: yellow;
+    text-align: center;
+}
+
+.nombor {
+    background-color: #03A9F4;
+    border-radius: 24px;
+    color: white;
+    font-size: 31px;
+    display: block;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+
+/** Start Of Video **/
+#video {
+    width: 100%;
+    text-align: center;
+    padding: 25px; 
+}
+
+
+#video video {
+    width: 640px;
+    height: 385px;
+    text-align: center;
+}
+
+
+#video h1 {
+    color: blue;
+    font-size: 21px;
+}
+
+
+/** Start Of Footer **/
+#footer {
+    width: 100%;
+    background-color: whitesmoke;
+    padding:20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 21px;
+}
+
+
+#footer h4 {
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    color: blue;
+}
