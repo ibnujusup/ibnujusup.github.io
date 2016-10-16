@@ -107,6 +107,7 @@ body {
 .socialicons ul li {
     list-style: none;
     display: inline-block;
+    margin-left: -13px;
 }
 
 
@@ -356,10 +357,19 @@ blockquote {
 
 /** Start Of Boxes **/
 #boxes {
-    margin-top: 144px;
-    padding:24px;
+    margin-top: 194px;
+    padding: 24px;
+    position: relative;
 }
 
+
+#boxes h1 {
+    position: absolute;
+    top: -28px;
+    left: 404px;
+    font-size: 21px;
+    color: blue;
+}
 
 .box1 img, .box2 img, .box3 img, .box4 img {
      width: 176px;
@@ -582,6 +592,7 @@ blockquote {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     margin-bottom: 21px;
+   
 }
 
 
@@ -590,4 +601,19 @@ blockquote {
     font-size: 19px;
     font-weight: bold;
     color: blue;
+}
+
+/** Start Of Sticky Message **/
+
+.sticky img {
+    position: fixed;
+    left: 0px;
+    top: 63px;
+    transform-style: preserve-3d;
+    transition: all 1.5s linear;
+}
+
+
+.sticky img:hover {
+    transform: rotateY(360deg);
 }
