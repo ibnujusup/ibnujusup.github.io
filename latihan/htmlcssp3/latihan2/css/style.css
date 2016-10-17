@@ -2,11 +2,6 @@
 * {   
 	margin:0;
 	padding:0;
-	border:0;
-	font-size: 100%;
-	vertical-align: baseline;
-	box-sizing: border-box;
-	
 }
 
 
@@ -16,24 +11,40 @@ body {
 }
 
 
+/** Start Of Wrapper **/
 #wrapper {
 	width: 960px;
 	margin: 0 auto;
 	background: white;
-    margin-top: 48px;
+    margin-top: 30px;
 }
 
 
 /** Start Of Header **/
 #header {
-	width: 100%;
-	padding: 18px;
+    width: 100%;
+    background: white;
+}
+
+
+#header:hover {
+    animation: berubahlatar 4s linear;
+}
+
+
+@keyframes berubahlatar {
+    0% {background-color: whitesmoke;}
+    25% {background-color: floralwhite;}
+    50% {background-color: antiquewhite;}
+    75% {background-color: deepskyblue;}
+    100% {background-color: lightseagreen;}
 }
 
 
 .logo {
     display: inline-block;
-    width: 50%;
+    width: 48%;
+    padding: 14px;
 }
 
 
@@ -43,6 +54,7 @@ body {
     vertical-align: middle;
     position: relative;
     animation: quran 4s linear 1s 4 reverse;
+    padding-left: 2px;
 }
 
 
@@ -62,7 +74,7 @@ body {
 }
 
 
-.combine h4 {
+.combine h2 {
     color: blue;
 }
 
@@ -75,7 +87,7 @@ body {
 .menu {
     display: inline-block;
     text-align: right;
-    width: 49%;
+    width: 47.1%;
     vertical-align: middle;
 }
 
@@ -153,7 +165,7 @@ body {
     margin-bottom: 16px;
     list-style: none;
     box-shadow: 2px 2px black;
-    font-size: 16px;
+    font-size: 21px;
 
 }
 
@@ -189,7 +201,7 @@ a:hover {
 /** Start Of Content **/
 #content {
     display: inline-block;
-    width: 71%;
+    width: 58.1%;
     padding: 30px;
     margin-left: -13px;
     position: relative;
@@ -200,9 +212,34 @@ a:hover {
     box-shadow: inset 0 0 50px #000, inset 0 0 50px #000, inset 0 0 50px #000;
 }
 
+#content p::first-letter {   /** Do we need to clear float for pseudo element that use it ? **/
+    font: bold italic 3em / 0.5 sans-serif;
+    float: left;
+    color: blue;
+    margin: 0.3em 0.2em 0.0em 0.0em;
+}
+
+::selection {
+    color: black;
+    background-color: yellow;
+}
+
 #content h4 {
 	text-align: center;
 	text-decoration: none;
+}
+
+
+#content img {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+    float: right;
+}
+
+
+#content img:hover {
+    filter: sepia(100%);
 }
 
 #content ul {
@@ -218,38 +255,38 @@ a:hover {
     font-weight: bold;
 }
 
-/** Start Of Column **/
+/** Start Of 3 Column **/
 #column {
     column-count: 3;
     border: 3px dotted blue;
     padding: 20px;
-    margin: 24px;
+    margin: 110px 24px 99px 24px;
     position: relative;
-    margin-top: 110px;
-    padding-left: 12px;
-    column-width: 223px;
-    column-fill: auto;
     text-align: center;
-    margin-bottom: 99px;
-    background: #eae2e2;
+    background: wheat;
+    height: 388px;
+    width: 100%;
+    box-sizing: border-box;
+    width: 95%;
 }
 
-#column img {
+.pelanggan {
     position: absolute;
     top: -80px;
     left: 334px;
 }
 
+.column img {
+    text-align: center;
+    width: 100%;
 
-blockquote {
-    border-left: 3px solid #ccc;
-    font-size: 19px;
 }
 
 
 .smallitalic {
     font-style: italic;
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 
@@ -257,18 +294,21 @@ blockquote {
     color: blue;
 }
 
+#column p:nth-of-type(1) {
+    break-before: column;
+}
 
 /** Start Of Efek Hebat **/
 #efekhebat {
     width: 100%;
     padding: 20px;
     position: relative;
+    margin-bottom: 2px;
 }
 
 
-#efekhebat h1 {
+#efekhebat h2 {
     color: blue;
-    font-size: 21px;
     position: absolute;
     top: -60px;
     right: 290px;
@@ -287,6 +327,8 @@ blockquote {
     transition-property: perspective;
     transition-duration: 0.5s;
     transform-style: preserve-3d;
+    width: 32%;
+    margin-left: 2px;
 }
 
 
@@ -296,11 +338,10 @@ blockquote {
 
 
 #efekhebat ul li img {
-    width: 303px;
+    width: 290px;
     height: 409px;
     border: 10px solid #fcfafa;
     transform: rotateY(10deg);
-    -moz-box-shadow: 0 3px 10px #888;
     box-shadow: 0 3px 10px #888;
     transition-property: transform;
     transition-duration: 0.5s;
@@ -315,8 +356,8 @@ blockquote {
 .efekini {
     border: 10px solid #fcfafa;
     padding: 20px;
-    width: 245px;
-    height: 122px;
+    width: 189px;
+    height: 102px;
     background-color: #deddcd;
     margin: -106px 0 -0px 69px;
     position: absolute;
@@ -357,34 +398,39 @@ blockquote {
 
 /** Start Of Boxes **/
 #boxes {
-    margin-top: 194px;
-    padding: 24px;
+    margin-top: 283px;
+    /* padding: 24px; */
     position: relative;
+    box-sizing: border-box;
+    margin-left: 16px;
 }
 
 
-#boxes h1 {
+#boxes h2 {
     position: absolute;
-    top: -28px;
-    left: 404px;
-    font-size: 21px;
+    top: -60px;
+    left: 375px;
     color: blue;
 }
 
 .box1 img, .box2 img, .box3 img, .box4 img {
-     width: 176px;
+    width: 176px;
     height: 185px;
 }
 
 
+
+
 .box1, .box2, .box3, .box4 {
-    width: 23.9%;
+    width: 19.5%;
     display: inline-block;
     border: 1px solid black;
     border-radius: 29px 29px 29px 29px;
     padding: 15px;
-    margin: 3px;
+    /* margin: 3px; */
     box-shadow: 4px 2px black;
+    margin-left: 9px;
+    height: 184px;
 }
 
 
@@ -428,12 +474,9 @@ blockquote {
 }
 
 
-.box4 {
-    cursor: pointer;
-    transition-property: border-radius, background-color;
-    height: 222px;
+.box4 {  
+    transition: all 3s ease;
     vertical-align: top;
-    transition: 3s linear;
 }
 
 
@@ -443,10 +486,11 @@ blockquote {
 }
 
 
-.box4 h4 {
+.box4 p {
     text-align: center;
-    font-size: 21px;
     color: blue;
+    font-size: 21px;
+    font-weight: bold;
 }
 
 
@@ -455,8 +499,9 @@ blockquote {
     padding: 21px;
     position: relative;
     width: 100%;
-    height: 274px;
-    margin-top: 49px;
+    height: 339px;
+    margin-top: 88px;
+    box-sizing: border-box;
 }
 
 
@@ -480,16 +525,15 @@ blockquote {
 
 
 .memo1:hover, .memo2:hover, .memo3:hover, .memo4:hover, .memo5:hover, .memo6:hover {
-    z-index: 7;
+    z-index: 6;
 }
 
 
-#memo h1 {
+#memo h2 {
     color: blue;
-    font-size: 21px;
     position: absolute;
-    top: -23px;
-    right: 373px;
+    top: -34px;
+    right: 339px;
 }
 
 
@@ -497,7 +541,7 @@ blockquote {
     margin-left: 2px;
     position: absolute;
     top: 21px;
-    left: 21px;
+    left: 14px;
     z-index: 1;
 }
 
@@ -506,7 +550,7 @@ blockquote {
     margin-left: 2px;
     position: absolute;
     top: 21px;
-    left: 161px;
+    left: 171px;
     z-index: 2;
 }
 
@@ -515,16 +559,17 @@ blockquote {
     margin-left: 2px;
     position: absolute;
     top: 21px;
-    left: 295px;
+    left: 329px;
     z-index: 3;
 }
+
 
 
 .memo4 {
     margin-left: 2px;
     position: absolute;
     top: 21px;
-    left: 429px;
+    left: 488px;
     z-index: 4;
 }
 
@@ -533,18 +578,12 @@ blockquote {
     margin-left: 2px;
     position: absolute;
     top: 21px;
-    left: 563px;
+    left: 647px;
     z-index: 5;
 }
 
 
-.memo6 {
-    margin-left: 2px;
-    position: absolute;
-    top: 21px;
-    right: 27px;
-    z-index: 6;
-}
+
 
 
 .kuning {
@@ -559,7 +598,7 @@ blockquote {
     font-size: 31px;
     display: block;
     text-align: center;
-    margin-bottom: 2px;
+    margin-bottom: 18px;
 }
 
 
@@ -572,15 +611,14 @@ blockquote {
 
 
 #video video {
-    width: 640px;
+    width: 580px;
     height: 385px;
     text-align: center;
 }
 
 
-#video h1 {
-    color: blue;
-    font-size: 21px;
+#video h2 {
+    color: blue;   
 }
 
 
@@ -588,17 +626,16 @@ blockquote {
 #footer {
     width: 100%;
     background-color: whitesmoke;
-    padding:20px;
+    padding: 20px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     margin-bottom: 21px;
-   
+    box-sizing: border-box;
 }
 
 
-#footer h4 {
+#footer h2 {
     text-align: center;
-    font-size: 19px;
     font-weight: bold;
     color: blue;
 }
@@ -608,7 +645,7 @@ blockquote {
 .sticky img {
     position: fixed;
     left: 0px;
-    top: 63px;
+    top: 36px;
     transform-style: preserve-3d;
     transition: all 1.5s linear;
 }
