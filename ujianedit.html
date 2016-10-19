@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LATIHAN FORM</title>
+	<style type="text/css">
+		
+	* {
+		margin:0;
+		padding: 0;
+	}
+
+#wrapper {
+    margin: 0 auto;
+    width: 451px;
+}
+
+#form {
+    margin-top: 10px;
+    background: #f5f8fa;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 34px;
+    padding-right: 67px;
+    font-family: Helvetica, sans-serif;
+}
+
+#form h3 {
+    margin-bottom: 5px;
+}
+
+#form1 {
+    margin-top: 13px;
+}
+
+
+h1 {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+
+
+
+input#firstname, input#lastname, input#reenter, input#email, input#password {
+    padding: 9px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+        text-indent: -1px;
+}
+
+input#firstname {
+    margin-right: 1.2%;
+    width: 48.6%;
+}
+
+input#lastname {
+    width: 48.8%;
+}
+
+input#email {
+    width: 100%;
+}
+
+input#reenter {
+    width: 100%;
+}
+
+input#password {
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+}
+
+div#birthday {
+    display: inline-block;
+    margin-bottom: 17px;
+    margin-top: 7px;
+}
+
+#birthday select {
+    /* padding: 5px; */
+    width: 57px;
+    height: 27px;
+    margin-right: -3px;
+    background: white;
+}
+
+div#birthday2 {
+    display: inline-block;
+    color: blue;
+    font-size: 12px;
+    line-height: 10px;
+    vertical-align: middle;
+    margin-left: 12px;
+}
+
+#birthday2 p {
+	font-family: "San francisco", sans-serif;
+	color: #365899;
+}
+
+form#form2 {
+    margin-left: 0px;
+}
+
+select {
+    padding: 4px;
+    width: 67px;
+    /* height: 22px; */
+    margin-right: -5px;
+}
+
+#form3 {
+    margin-bottom: 14px;
+    font-size: 11px;
+}
+
+input#female {
+    margin-left: 9px;
+    /* margin-right: 0px; */
+}
+
+input#male {
+    margin-left: 23px;
+}
+
+span.kecil {
+    font-size: 10px;
+}
+input#submit {
+    color: white;
+    background: #20b326;
+    padding: 8px;
+    border-radius: 6px;
+    width: 181px;
+    /* font-weight: bold; */
+    font-family: "freight sans";
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="wrapper">
+<div id="form">
+	<h1>Sign Up</h1>
+	<p>It's free and always will be.</p>
+
+	<form id="form1">
+		<fieldset>
+			<label>
+				<input type="text" name="firstname" id="firstname" placeholder="First name">
+			</label>
+			<label>
+				<input type="text" name="lastname" id="lastname" placeholder="Last name">
+			</label>
+			<br>
+			<label>
+				<input type="text" name="email" id="email" placeholder="Email or mobile number">
+			</label>
+			<br>
+			<label>
+				<input type="text" name="reenter" id="reenter" placeholder="Re-enter email or mobile number">
+			</label>
+			<br>
+			<label>
+				<input type="password" name="password" id="password" placeholder="New password">
+			</label>
+		</fieldset>
+	</form>
+
+	<p>Birthday</p>
+
+	<div id="birthday">
+		<form id="form2">
+			<select>
+				<option value="month"> Month </option>
+			</select>
+			<select>
+				<option value="day"> Day </option>
+			</select>
+			
+			<select>
+				<option value="year"> Year </option>
+			</select>
+		</form>
+	</div>
+
+	<div id="birthday2">
+		<p><span class="fransisco"> Why do I need to provide my <br> birthday ?</span></p>
+	</div>
+
+	<form id="form3">
+	<label>
+		<input type="radio" name="female" id="female"> Female
+	</label>
+	<label>
+		<input type="radio" name="male" id="male">  Male
+	</label>
+	</form>
+
+	<span class="kecil"><p>By clicking Sign Up, you agree to our Terms and that you have</p> <p>read our Data Policy, including our Cookie Use.</p></span>
+
+	<br>
+
+	<label>
+		<input type="submit" value="Sign Up" id="submit">
+	</label>
+</div>
+</div>
+
+</body>
+</html>
