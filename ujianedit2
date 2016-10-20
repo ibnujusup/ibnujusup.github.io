@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LATIHAN FORM VERSI UBAH HTML KOD 2</title>
+	<style type="text/css">
+		
+
+		form {
+		    margin: 0 auto;
+		    width: 480px;
+		    background: lightblue;
+		    padding: 5px 60px 5px 20px;
+		    box-sizing: border-box;
+		    font-family: helvetica, sans-serif;
+		}
+
+
+		form h2 {
+		    margin-bottom: -11px;
+		    font-weight: 500;
+		}
+
+		fieldset {
+		    border: none;
+		    margin-left: -11px;
+		    margin-top: -12px;
+		}
+
+		input#firstname, input#lastname {
+		    width: 44.7%;
+		    margin-bottom: 9px;
+		}
+
+		
+
+		input#email, input#reenter, input#password {
+		    width: 100%;
+		    box-sizing: border-box;
+		    margin-top: -3px;
+		}
+
+		input#password {
+		    margin-bottom: -13px;
+		}
+
+		input {
+		    padding: 7px;
+		    border-radius: 3px;
+
+		}
+
+		#info div {
+		    margin-bottom: 8px;
+		}
+
+
+		#info {
+		    margin-bottom: -4px;
+		}
+
+		div#birthday1 {
+		    display: inline-block;
+		    width: 56%;
+		}
+
+		select {
+		    width: 64px;
+		    margin-right: -4px;
+		}
+
+		div#birthday2 {
+		    display: inline-block;
+		    width: 41%;
+		    font-size: 10px;
+		    line-height: 0px;
+		    margin-left: -25px;
+		    /* vertical-align: middle; */
+		}
+
+
+		#birthday p {
+		    margin-bottom: -1px;
+		    margin-top: 9px;
+		}
+
+		section#birthday {
+		    margin-bottom: 17px;
+		}
+
+		#gender label {
+		    font-size: 11px;
+		}
+
+		#gender input {
+		    margin-left: 9px;
+		    margin-right: 4px;
+		}
+
+		section#rules {
+		    font-size: 10px;
+		    line-height: 2px;
+		    margin-top: 3px;
+		}
+
+
+		#signup h5 {
+		    border: 2px solid transparent;
+		    border-radius: 6px;
+		    background: #519854;
+		    padding: 6px;
+		    color: white;
+		    text-align: center;
+		    width: 35%;
+		    box-shadow: black;
+		}
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<form>
+		<h2>Sign Up</h2>
+		<p>It's free and always will be.</p>
+
+		<section id="info">
+			<fieldset>
+				<label for="firstname">
+					<input type="text" name="firstname" id="firstname" placeholder=" First name">
+				</label>
+
+				<label for="lastname">
+					<input type="text" name="lastname" id="lastname" placeholder="Last name">
+				</label>
+				
+				<div>
+				<label for="email">
+					<input type="text" name="email" id="email" placeholder="Email or mobile number">
+				</label>
+				</div>
+			
+				<div>
+				<label for="reenter">
+					<input type="text" name="reenter" id="reenter" placeholder="Re-enter email or mobile number">
+				</label>
+				</div>
+			
+				<div>
+				<label for="password">
+					<input type="password" name="password" id="password" placeholder="New password">
+				</label>
+				</div>
+				
+			</fieldset>
+		</section>
+
+		<section id="birthday">
+			<p>Birthday</p>
+			<div id="birthday1">
+				<select>
+					<option value="month"> Month</option>
+				</select>
+				<select>
+					<option value="day"> Day</option>
+				</select>
+				<select>
+					<option value="Year"> Year</option>
+				</select>
+			</div>
+			<div id="birthday2">
+				<p>Why do I need to provide my</p>
+				<p>birthday</p>
+			</div>
+		</section>
+
+		<section id="gender">
+			<label for="female">
+				<input type="radio" name="gender" id="female"> Female
+			</label>
+			<label for="male">
+				<input type="radio" name="gender" id="male"> Male
+			</label>
+		</section>
+		<p></p>
+
+
+		<section id="rules">
+			<p>By clicking Sign Up, you agree to our Terms and that you have</p>
+			<p>read our Data Policy, including our Cookie Use</p>
+		</section>
+
+		<section id="signup">
+			<h5>Sign Up</h5>
+		</section>
+	</form>
+
+
+
+</body>
+</html>
