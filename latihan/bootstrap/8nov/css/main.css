@@ -1,0 +1,210 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#home {
+    background: url(../images/homebg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+}
+
+#home .container {
+    padding: 120px 0;
+}
+
+#home h1 {
+    font-weight: 100;
+    border-top: 1px solid black;
+    display: inline-block;
+    border-bottom: 1px solid black;
+}
+
+#home h3 {
+    font-weight: 100;
+    margin-bottom: 24px;
+}
+
+#home i {
+    font-size: 30px;
+}
+
+#about {
+    background: url(../images/aboutbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#about .container {
+    padding: 120px 0;
+}
+
+#about h1 {
+    font-weight: 100;
+    color: #fff;
+    font-size: 24px;
+}
+
+#about hr {
+    width: 11%;
+}
+
+#about p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    display: inline-block;
+    width: 744px;
+}
+
+#services h3 {
+    color: #873fb5;
+    font-weight: 100;
+}
+
+#services .service-title {
+    padding: 50px 0;
+}
+
+#services i {
+    font-size: 48px;
+    border-right: 1px solid black;
+    color: #c1c1c1;
+    padding-right: 20px;
+    float: left;
+}
+
+#services h2 {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+#services h4 {
+    color: #873fb5;
+}
+
+#services .service-header {
+    display: inline-block;
+    margin-top: -20px;
+    padding-left: 20px;
+}
+
+#services .container .coll {
+    padding-bottom: 40px;
+}
+
+#skills {
+    background: url(../images/skillsbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 467px;
+}
+
+#skills .skill-left {
+    padding: 110px 0;
+}
+
+#skills h2 {
+    font-weight: 900;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: -20px;
+}
+
+#skills h3 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+#skills p {
+    color: #fff;
+    padding-bottom: 20px;
+    font-weight: 100;
+}
+
+#skills .button1 {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+#skills .button1:hover {
+    color: #873fb5;
+    border-bottom: 3px solid #873fb5;
+}
+
+#skills .button2 {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 20px;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+#skills .button2:hover {
+    color: #873fb5;
+    border-bottom: 3px solid #873fb5;
+}
+
+#portfolio .one {
+	background: url(../images/p1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+
+#portfolio .two {
+	background: url(../images/p2.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+
+
+
+#portfolio .three {
+	background: url(../images/p3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+
+#portfolio .four {
+	background: url(../images/p4.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+
+#portfolio .five {
+	background: url(../images/p5.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+
+
+#portfolio .six {
+	background: url(../images/p6.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+
+#portfolio h3 {
+	color: #873fb5;
+	padding: 90px 0;
+	font-weight: 100;
+}
