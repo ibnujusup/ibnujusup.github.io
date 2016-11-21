@@ -1,0 +1,350 @@
+        /** START HEADER SECTION **/
+        
+        .navbar-inverse {
+            background-color: transparent;
+            border-color: transparent;
+            padding-top: 40px;
+        }
+        
+        .navbar-nav {
+            float: right;
+            margin: 0;
+            margin-right: 200px !important;
+        }
+        
+        .navbar-header {
+            margin-left: 200px !important;
+            padding-top: 4px;
+        }
+        
+        .navbar-nav > li > a {
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+        
+        .navbar-inverse .navbar-nav > .active > a,
+        .navbar-inverse .navbar-nav > .active > a:hover,
+        .navbar-inverse .navbar-nav > .active > a:focus {
+            color: #fff;
+            background-color: #9932CC;
+        }
+        
+        .navbar-inverse .navbar-nav > li > a {
+            color: #fff;
+        }
+        
+        .navbar-inverse .navbar-brand {
+            color: #fff;
+            margin-top: -20px;
+        }
+        
+        #header {
+            background-color: purple;
+            padding: 0 0 40px 0;
+        }
+        
+        #header .header-info h3 {
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            padding-left: 15%;
+            padding-right: 15%;
+            padding-top: 6%;
+            padding-bottom: 2%;
+        }
+        
+        #header .btn-warning {
+            color: #fff;
+            background-color: #f0ad4e;
+            border-color: #eea236;
+            margin-bottom: 40px;
+            padding: 10px 40px;
+            margin-top: 20px;
+        }
+        /** START SERVICE SECTION **/
+        
+        #service {
+            background-color: #8bc34a;
+            padding: 50px 0;
+            margin-top: -20px;
+        }
+        
+        #service .service-header h2 {
+            color: #fff;
+        }
+        
+        #service .service-header hr {
+            width: 4%;
+            color: #000 !important;
+        }
+        
+        #service .service-header p {
+            color: #fff;
+            margin-bottom: 30px;
+            width: 100%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        
+        #service i {
+            font-size: 155px;
+            color: red;
+            margin-bottom: 30px;
+        }
+        
+        #service h4 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        
+        #service p {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        /** START TEAM SECTION **/
+        
+        #team {
+            background-color: #a6c5de;
+            padding: 50px 0;
+            margin-top: -20px;
+        }
+        
+        #team .team-header h2 {
+            color: #000;
+        }
+        
+        #team .team-header hr {
+            width: 4%;
+            background-color: grey;
+            border: 1px solid grey;
+        }
+        
+        #team .team-header p {
+            color: #000;
+            margin-bottom: 30px;
+            width: 100%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        
+        #team i {
+            font-size: 155px;
+            color: grey;
+            margin-bottom: 5px;
+        }
+        
+        #team h4 {
+            color: grey;
+            margin-bottom: 3px;
+        }
+        
+        #team p {
+            color: #000;
+            margin-bottom: 15px;
+        }
+        
+        #team .padding-center {
+            width: 100%;
+            padding-left: 13%;
+            padding-right: 13%;
+        }
+        
+        #team .social-icon .fa {
+            font-size: 21px;
+            width: 32px;
+            margin: 0;
+            background-color: #aaa;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 23px;
+            margin-bottom: 30px;
+        }
+        /** START SKILLS SECTION **/
+        
+        #skills {
+            background-color: #fff;
+            padding: 5% 0% 5% 2%;
+            margin-top: -20px;
+        }
+        
+        #skills .skills-header h2 {
+            color: #000;
+        }
+        
+        #skills .skills-header hr {
+            width: 4%;
+            background-color: grey;
+            border: 1px solid grey;
+        }
+        
+        #skills .skills-header p {
+            color: #000;
+            margin-bottom: 30px;
+            width: 100%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        
+        #skills .row h4 {
+            margin-bottom: 26px;
+        }
+        /** START PORTFOLIO SECTION **/
+        
+        #portfolio {
+            background-color: #ffdd99;
+            padding: 5% 0% 5% 2%;
+            margin-top: -20px;
+        }
+        
+        #portfolio .portfolio-header h2 {
+            color: #000;
+        }
+        
+        #portfolio .portfolio-header hr {
+            width: 4%;
+            background-color: grey;
+            border: 1px solid grey;
+        }
+        
+        #portfolio .portfolio-header p {
+            color: #000;
+            margin-bottom: 30px;
+            width: 100%;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+        
+        #portfolio .btn-default {
+            color: black;
+            background-color: rgba(121, 113, 113, 0.38);
+            border-color: transparent;
+            margin-bottom: 40px;
+        }
+        
+        #portfolio .btn-info {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        /** START TESTIMONY SECTION **/
+        
+        #testimony {
+            background-color: #B73C6D;
+            padding: 5% 0% 5% 2%;
+            margin-top: -20px;
+        }
+        
+        #testimony .testimony-header h2 {
+            color: #fff;
+        }
+        
+        #testimony .testimony-header hr {
+            width: 4%;
+            background-color: grey;
+            border: 1px solid grey;
+        }
+        
+        #testimony .testimony-header p {
+            color: #fff;
+            margin-bottom: 30px;
+            width: 100%;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+        
+        #testimony .testimony-info {
+            margin-bottom: 20px;
+        }
+        
+        #testimony .testimony-info p {
+            margin-left: 10px;
+        }
+        
+        #testimony .fa {
+            font-size: 94px;
+            margin-right: 0;
+            color: #aaa;
+        }
+        /** START CONTACT SECTION **/
+        
+        #contact {
+            background-color: #3C5499;
+            padding: 70px 0;
+            margin-top: -20px;
+        }
+        
+        #contact .contact-header h2 {
+            color: #fff;
+        }
+        
+        #contact .contact-header hr {
+            width: 4%;
+            background-color: grey;
+            border: 1px solid grey;
+        }
+        
+        #contact .contact-header p {
+            color: #fff;
+            margin-bottom: 30px;
+            width: 100%;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+        
+        #contact .btn {
+            margin-top: 12px;
+            margin-left: 15px;
+            margin-bottom: 11px;
+        }
+        
+        .form-control {
+            background-color: #273A71;
+            height: 48px;
+            border: none;
+        }
+        
+        textarea.form-control {
+            min-height: 200px;
+            margin-bottom: 15px;
+        }
+        
+        .form-group {
+            margin-bottom: 30px;
+        }
+        
+        #contact .row {
+            margin-right: 20%;
+            margin-left: 20%;
+        }
+        
+        #contact .btn-success {
+            color: #fff;
+            background-color: #32BAE7;
+            border-color: #32BAE7;
+            padding: 15px 40px;
+            font-size: 14px;
+            margin: 0 auto;
+        }
+        /** START FOOTER SECTION **/
+        
+        #footer {
+            background-color: #344B8E;
+            padding: 30px 0;
+        }
+        
+        #footer ul {
+            list-style-type: none;
+        }
+        
+        #footer li {
+            display: inline-block;
+            margin-right: 1%;
+            color: #fff;
+        }
+        
+        #footer li a {
+            color: #fff;
+        }
+        
+        #footer li a:hover {
+            text-decoration: none;
+        }
