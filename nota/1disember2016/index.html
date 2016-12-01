@@ -3,6 +3,101 @@ Mr Dudy
 
 -website hanya faham java script
 -2 part:
-> 
--write less do more, for jquery
--
+ 
+-write less, do more, for jquery
+-RUJUKAN UTAMA: https://jquery.com/
+-untuk tutorial : http://try.jquery.com/
+-CDN - content delivery network, 
+-style.css , so better 
+-so untuk setiap project, jangan downlaod satu folder, just gune template sendiri, dari booststrap..so, in case ade update dari bootstrap, jquery dan lain2, tak perlu edit lagi fail di komputer sendiri
+-kalau script ade CDN, go with CDN
+-bace ni >> http://try.jquery.com/levels/1/sections/2
+
+
+----------------
+
+> $("span").text();     utk grabt ext dlm span
+
+
+> $("span").text("$100");    utk tukar info dalam text itu
+
+$( document ).ready(function() {
+  // Handler for .ready() called.
+  $("span").text("$100");
+});
+
+
+tujuan ini, untuk load jquery, ini >> Great! Now we just have to make sure the code runs after the page has finished loading (when the DOM is ready), go ahead and do that now.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="homepage-wrapper">
+      <h2>Welcome to jQuery Travels - Traversing the DOM since 2006</h2>
+      <p>Fly to New York today for as little as <span>$299.99</span></p>
+    </div>
+    <script src="jquery.min.js"></script>
+  </body>
+</html>
+
+
+>>>> biar DOM jalan dulu, baru letak ini  <script src="jquery.min.js"></script>   sebelum </body> tag
+
+boleh letak script inline dalam kod atau letak link,  <srcipt src=""  </script>
+
+ >$("span").text("laggin");  css dalam span tu
+
+-java script interact degan DOM, bukan dengan html.. tu pasal video die letak bende tu
+
+-div > p	Selects all <p> elements where the parent is a <div> element
+
+
+2.1 searching the DOM vide0
+-index di DOM start at 0,  cth dalam list
+-ade ayat odd, even , first, last 
+-kalau, odd, 0 da masuk 0
+-challengese, buat kat rumah
+sumber selector : http://www.w3schools.com/cssref/css_selectors.asp
+
+
+TRAVERSING-------------------
+-Walking the DOM.
+-method chaining
+ex:  &("li").first().parent();   dot disini ialah dot dalam jquery method
+-yg lain>>  .next()   .
+
+
+-Walking down the DOM.
+-traverse down
+-children("li");  nak dierct dalam li children , kalau gune .find("li"); semue die cari
+
+
+-------------------------------------
+3.1 VIDEO manipulating the dom
+BAHASA semantik di jquery bukan java script
+.prepend    dalam tempat yang sama ,  pre , sebelum dalam list same
+append , last sekali
+CARA INSERT:
+-append, prepend, before, after
+CARA BUANG:
+.remove,  untuk buang bende
+
+.appendTo  dan lain2, untuk terbalik punye selector..
+
+
+__________________________________
+3.2 manipulating the DOM
+-JQUERY OBJECT METHOD
+
+.on(<event>. <event handler>)
+
+cth: $('button').on('click',function(){})
+
+
+
+
+
+
