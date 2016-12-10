@@ -1,0 +1,62 @@
+    img {
+        width: 100%;
+    }
+    
+    header.content-fluid {
+        padding: 50px 0;
+        color: blue;
+        font-weight: bold;
+        background: url(../images/satu.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #intro .col-md-3 {
+        padding: 0 !important;
+    }
+    
+    section#intro {
+        background: rgba(210, 255, 82, 1);
+        background: -moz-linear-gradient(top, rgba(210, 255, 82, 1) 0%, rgba(182, 245, 75, 1) 26%, rgba(145, 232, 66, 1) 61%, rgba(145, 232, 66, 1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(210, 255, 82, 1)), color-stop(26%, rgba(182, 245, 75, 1)), color-stop(61%, rgba(145, 232, 66, 1)), color-stop(100%, rgba(145, 232, 66, 1)));
+        background: -webkit-linear-gradient(top, rgba(210, 255, 82, 1) 0%, rgba(182, 245, 75, 1) 26%, rgba(145, 232, 66, 1) 61%, rgba(145, 232, 66, 1) 100%);
+        background: -o-linear-gradient(top, rgba(210, 255, 82, 1) 0%, rgba(182, 245, 75, 1) 26%, rgba(145, 232, 66, 1) 61%, rgba(145, 232, 66, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(210, 255, 82, 1) 0%, rgba(182, 245, 75, 1) 26%, rgba(145, 232, 66, 1) 61%, rgba(145, 232, 66, 1) 100%);
+        background: linear-gradient(to bottom, rgba(210, 255, 82, 1) 0%, rgba(182, 245, 75, 1) 26%, rgba(145, 232, 66, 1) 61%, rgba(145, 232, 66, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=0);
+        padding: 30px 0;
+        box-shadow: inset black 10px 10px 10px 15px;
+    }
+    
+    section#skills {
+        background: black;
+        color: white;
+        padding: 40px 0;
+        line-height: 29px;
+        text-align: justify;
+        /* column-count: 4; */
+    }
+    
+
+    /* SATU PROPERTY YANG ADA SEMUE SAIZ MEDIA QUERY, IAAITU CLASS CONTAINER, SO, TENGOK CONTAINER, NAIK DANT RU
+    UNKAN SAIZ , AKAN ADE NILAI EMDIA QUERY*/
+    @media (min-width: 768px) {
+        article {
+            column-count: 2;
+            column-gap: 25px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        article {
+            column-count: 3;
+            column-gap: 25px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        article {
+            column-count: 4;
+            column-gap: 25px;
+        }
+    }
