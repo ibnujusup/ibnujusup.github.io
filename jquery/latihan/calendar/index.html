@@ -1,1 +1,45 @@
 
+<!doctype html>
+<html class="" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CALENDAR JQUERY PLUGIN</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- jQuery CDN -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <script src="js/zabuto_calendar.min.js"></script>
+</head>
+
+<body>
+    <!--START CALENDAR SECTION -->
+    <section id="calendar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-5">
+                <h3>CALENDAR JQUERY PLUGIN</h3>
+                <!-- define the calendar element -->
+                    <div id="my-calendar"></div>
+                    <!-- initialize the calendar js on ready -->
+                    <script type="application/javascript">
+                    $(document).ready(function() {
+                        $("#my-calendar").zabuto_calendar();
+                    });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
