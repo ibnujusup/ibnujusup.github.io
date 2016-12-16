@@ -1,0 +1,86 @@
+body {
+    background-color: #33333;
+}
+
+h1 {
+    color: #99792f
+}
+
+h1>span {
+    color: #564e49
+}
+
+hr {
+    border-color: #99792f -moz-use-text-color #fff
+}
+
+body>.container {
+    margin-top: 30px;
+    padding: 40px 30px 35px 30px;
+    background-color: #fff;
+    border: 1px solid #99792f;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px
+}
+
+p>[class^="glyphicon-"],
+p>[class*=" glyphicon-"],
+a [class^="glyphicon-"],
+a [class*=" glyphicon-"] {
+    margin-top: 3px
+}
+
+div.social {
+    margin-top: 60px;
+    border: 0;
+    background-color: transparent;
+    text-align: center
+}
+
+div.social a {
+    margin-right: 15px;
+    text-decoration: none
+}
+
+div.social a:hover {
+    text-decoration: none
+}
+
+div.social a:last-child {
+    margin-right: 0
+}
+
+div.social a img {
+    border: 0
+}
+
+div.error-page {
+    margin-top: 15px;
+    margin-left: 175px;
+    border: 0;
+    background-color: transparent
+}
+
+div.error-page a {
+    color: #000;
+    text-decoration: none
+}
+
+@media(max-width:767px) {
+    div.social {
+        margin-top: 165px
+    }
+}
+
+
+/* CUSTOM CSS */
+
+.col-xs-5 {
+    width: 41.66666667%;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
