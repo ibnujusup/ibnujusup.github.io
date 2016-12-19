@@ -1,0 +1,66 @@
+19 DISEMBER 2016
+KELAS WORDPRESS TERAKHIR
+
+
+A) HOW TO INSERT JQUERY PLUGIN INSIDE WORDPRESS ?
+
+1) Use this plugin >> https://wordpress.org/plugins/custom-css-js
+
+2) Make 1 custom file first, inside the Simple Custom CSS and JS plugin.. (CHOOSE ADD CUSTOM JS OPTION)
+-The purpose, is to make sure, this file is in the bottom part of the html code (near the closing body tag (</body>)
+-This step is also crucial for the calling / firing of other JS code plugin
+-Inside the Simple Custom CSS and JS  plugin, CHOOSE  Linking type as Internal and Where on page as footer
+-OTHER STANDALONE JQUERY PLUGIN codes should be put after the custom file inside the Simple Custom CSS and JS  plugin...
+
+
+
+B) SPECIAL CASE:
+**FOR FLUX PLUGIN  (http://www.joelambert.co.uk/flux/ ), you need to create 1 new page inside wordpress, to hold your html, because flux slider need DOM first before it can proceed.. for the flaoting jquery plugin, it just need firing...
+
+*STEP BY STEP*
+1) MAKE 1 NEW PAGE INSIDE WORDPRESS PAGE:
+Put this code (Source of this code is from here >>  view-source:http://www.joelambert.co.uk/flux/ ):
+
+<div id="slidercontainer">
+   <div id="slider">
+   <img src="http://www.joelambert.co.uk/flux/img/avatar.jpg" alt="" />
+    <img src="http://www.joelambert.co.uk/flux/img/ironman.jpg" alt=""/> 
+     <img src="http://www.joelambert.co.uk/flux/img/tron.jpg" alt="" />
+    </div>
+</div>
+
+
+2) MAKE 1 CUSTOM JS  , INSIDE THE Simple Custom CSS and JS plugin.
+Put the java script code from here (http://www.joelambert.co.uk/flux/js/flux.min.js?v=20111012)
+
+inside the custom js
+
+
+3) FIRING / CALLING OF THE FLUX PLUGIN CODE INSIDE CUSTOM
+-Put this code inside custom js file:
+
+*call flux jquery plugin */
+
+    window.myFlux = new flux.slider('#slider');
+
+
+
+4) FINISH
+-the working demo:  
+http://baha.learnandearn.guru/index.php/flux-plugin-demo/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
