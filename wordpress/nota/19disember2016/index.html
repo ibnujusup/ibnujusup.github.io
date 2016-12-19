@@ -69,7 +69,58 @@ C) BACKUP WORDPRESS FILES INFORMATION
 
 3) GO TO PHP MY ADMIN   (bahagian database)
 - cari name file tu , cth  wpress_wp466  (cth sahaja) , refer to the wp-config.php file (THE mysql database name 
+-klik export  (database dalam format sql)
+-pilih custom 
+-select all
+-compression, pilih zip
+-file name template, pilih nama ( cth  @DATABASE@backup-ccc-apeapeaje-19dec20161230pm
+-object creation option - pilih add drop table
+-tekan go
+
+CARA 1 SIMPAN DATABASE
+-go to main dashboard (di myphp admin ), uplaod file
+-select file
+-masukkan file yg baru download tu
+-simpan
+
+
+CARA 2 SIMPAN DATABASE
+- LETAK NAMA WWEBSITE DI DALAM 2 ZIP FILE TU supaya kite tau itu dalam satu website yang same
+-letak dalam 1 folder baru
+-untuk backup kite
+-kalau pelangga tu da ade website, buat  backup untuk fiel die dulu (safety first)
+-untuk practuce, buat satu subdomain lain untuk uplaod, ok ke tak..
 -
+
+
+CARA IMPORT DATABSE / ABCKUP BARU
+-buat satu subdomain (utk altihan aje)
+-go to root of the subdomain (in cpanel)
+-upload
+-masukkan file dulu (yang zip file tu )
+-reload
+-extract file tadi
+-reload
+-go to wp-config
+-edit
+-kenebuat database full ayng abrud ari kosong
+> cpanel
+> database
+>my sql database wizard / atau x wizard
+> cerate database , cth 9gune name ape ape aje  (db name)
+> next
+>username (same dengan yg tadi ok gak)
+>pasword
+>create user
+>all privilages
+>next
+>boleh check databse kite di myphpadmin
+> 
+
+
+
+
+
 
 
 
